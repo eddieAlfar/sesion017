@@ -1,0 +1,28 @@
+###
+POST http://localhost:8080/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Rigoberto Suarez",
+    "age" : "28",
+    "email":"RSuarez@email.com"
+}
+
+###
+GET http://localhost:8080/api/users HTTP/1.1
+
+###
+GET http://localhost:8080/api/users/639cdfedccd2a08f800febc5 HTTP/1.1
+
+###
+PUT http://localhost:8080/api/users/639ce05bccd2a08f800febc8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Roberto Suarez",
+    "age" : 28,
+    "email":"RSuarezm@email.com"
+}
+
+###
+DELETE  http://localhost:8080/api/users/639ce2329c436a8c90e08178 HTTP/1.1
